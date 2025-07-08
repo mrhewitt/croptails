@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bkin53c0n5rk1"]
+[gd_scene load_steps=9 format=3 uid="uid://bkin53c0n5rk1"]
 
 [ext_resource type="Texture2D" uid="uid://e2hbryb8stpt" path="res://assets/objects/basic_grass_biom_things.png" id="1_a8qts"]
+[ext_resource type="Material" uid="uid://dhuu8x27dyef5" path="res://scenes/objects/trees/tree_shake_material.tres" id="1_w057i"]
 [ext_resource type="Script" uid="uid://di86xlbip5e3g" path="res://scenes/objects/trees/small_tree.gd" id="2_g5iuu"]
 [ext_resource type="PackedScene" uid="uid://bm3vgwbsis07g" path="res://scenes/components/hurt_component.tscn" id="2_xyb6m"]
 [ext_resource type="PackedScene" uid="uid://coaogv3cxuxvq" path="res://scenes/components/damage_component.tscn" id="4_w057i"]
@@ -16,6 +17,7 @@ radius = 4.0
 size = Vector2(8, 22)
 
 [node name="SmallTree" type="Sprite2D"]
+material = ExtResource("1_w057i")
 position = Vector2(0, -12)
 texture = SubResource("AtlasTexture_xyb6m")
 script = ExtResource("2_g5iuu")

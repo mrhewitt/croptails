@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dhuu8x27dyef5"]
+
+[ext_resource type="Shader" uid="uid://cetj8wclolfng" path="res://scenes/objects/trees/tree_shake.gdshader" id="1_qjsru"]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("1_qjsru")
+shader_parameter/shake_intensity = 0.0
+shader_parameter/shake_speed = 20.0
