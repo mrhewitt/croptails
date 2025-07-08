@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dhuu8x27dyef5"]
 
-[ext_resource type="Shader" uid="uid://cetj8wclolfng" path="res://scenes/objects/trees/tree_shake.gdshader" id="1_qjsru"]
+[ext_resource type="Shader" uid="uid://cetj8wclolfng" path="res://scenes/objects/shake.gdshader" id="1_qjsru"]
 
 [resource]
 resource_local_to_scene = true
