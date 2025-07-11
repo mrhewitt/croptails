@@ -43,4 +43,3 @@ func _on_enter() -> void:
 func _on_exit() -> void:
 	animated_sprite_2d.stop()
 	hit_component_collision_shape.disabled = true
-	hit_component_collision_shape.position = Vector2(0,0)
