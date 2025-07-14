@@ -183,11 +183,10 @@ script = ExtResource("1_14ngq")
 [node name="CowMooSFX" parent="." instance=ExtResource("2_4jynl")]
 
 [node name="AudioPlayTimeComponent" parent="." node_paths=PackedStringArray("audio_stream_player_2D") instance=ExtResource("3_cgos1")]
-wait_time = 20.0
 autostart = true
 audio_stream_player_2D = NodePath("../CowMooSFX")
-min_wait_time = 15
-max_wait_time = 75
+min_wait_time = 30
+max_wait_time = 95
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ehsty")
