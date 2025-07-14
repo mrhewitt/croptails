@@ -50,7 +50,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			
 			# create some dialogue 
 			var balloon: BaseGameDialogueBalloon = GAME_DIALOGUE_BALLOON.instantiate()
-			get_tree().current_scene.add_child(balloon)
+			get_tree().root.add_child(balloon)
 			balloon.start(load("res://dialogue/conversations/chest.dialogue"), dialogue_start_command)
 
 

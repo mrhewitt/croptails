@@ -19,7 +19,6 @@ func on_hurt(hit_damage: int) -> void:
 	
 func on_max_damage_reached() -> void:
 	call_deferred("add_log_scene")
-	print("max damage reached")
 	queue_free()
 
 

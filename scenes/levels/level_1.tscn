@@ -1,14 +1,19 @@
-[gd_scene load_steps=7 format=4 uid="uid://c3f4ne2eemm0y"]
+[gd_scene load_steps=10 format=4 uid="uid://c3f4ne2eemm0y"]
 
 [ext_resource type="TileSet" uid="uid://bxkgnen262uiq" path="res://tilesets/game_tile_set.tres" id="1_6761a"]
+[ext_resource type="PackedScene" uid="uid://c4dhonrawvsi2" path="res://scenes/components/save_level_data_component.tscn" id="1_dga24"]
 [ext_resource type="PackedScene" uid="uid://sye5psybtehe" path="res://scenes/components/field_cursor_component.tscn" id="2_sk5k4"]
 [ext_resource type="Script" uid="uid://dit705c2r4ud6" path="res://scenes/components/field_cursor_component.gd" id="3_oc4kc"]
+[ext_resource type="PackedScene" uid="uid://dact4yt6o8lg2" path="res://scenes/components/save_data_component.tscn" id="3_qxy0u"]
+[ext_resource type="Resource" uid="uid://dctwt76lh45pw" path="res://resources/tilemap_layer_data_resource.tres" id="4_excbq"]
 [ext_resource type="PackedScene" uid="uid://das3nmcaljnr6" path="res://scenes/components/crops_cursor_component.tscn" id="4_s8va5"]
 [ext_resource type="Script" uid="uid://lajkyeuusk2b" path="res://scenes/components/crops_cursor_component.gd" id="5_dga24"]
 [ext_resource type="PackedScene" uid="uid://br2egrydj2kt0" path="res://scenes/characters/guide/guide.tscn" id="6_sk5k4"]
 
 [node name="Level1" type="Node2D"]
 y_sort_enabled = true
+
+[node name="SaveLevelDataComponent" parent="." instance=ExtResource("1_dga24")]
 
 [node name="GameTilemap" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -23,6 +28,9 @@ tile_set = ExtResource("1_6761a")
 
 [node name="TilledSoil" type="TileMapLayer" parent="GameTilemap"]
 tile_set = ExtResource("1_6761a")
+
+[node name="SaveDataComponent" parent="GameTilemap/TilledSoil" instance=ExtResource("3_qxy0u")]
+save_data_resource = ExtResource("4_excbq")
 
 [node name="Undergrowth" type="TileMapLayer" parent="GameTilemap"]
 tile_map_data = PackedByteArray("AAAHABUAAwAGAAEAAAABABUAAwAGAAEAAAD4/xgAAwAGAAEAAAD3/xgAAwAGAAEAAAD1/x0AAwAGAAEAAAD//x8AAwAGAAEAAAA=")

@@ -33,7 +33,6 @@ func growth_states(starting_day:int, current_day: int) -> void:
 	current_growth_state = state_index
 	
 	var name = DataTypes.GrowthStates.keys()[current_growth_state]
-	print("Current growth state: ", name, " State Index: ", state_index)
 	
 	if current_growth_state == DataTypes.GrowthStates.Maturity:
 		crop_maturity.emit()
