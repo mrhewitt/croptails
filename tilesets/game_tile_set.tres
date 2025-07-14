@@ -1,10 +1,11 @@
-[gd_resource type="TileSet" load_steps=19 format=3 uid="uid://bxkgnen262uiq"]
+[gd_resource type="TileSet" load_steps=20 format=3 uid="uid://bxkgnen262uiq"]
 
 [ext_resource type="Texture2D" uid="uid://tpipf0jxjtn1" path="res://assets/tilesets/water.png" id="1_tjtrf"]
 [ext_resource type="Texture2D" uid="uid://dwd5qkfkdf2gd" path="res://assets/tilesets/grass.png" id="2_tkbyn"]
 [ext_resource type="Texture2D" uid="uid://u15o8bppcrmh" path="res://assets/tilesets/tilled_dirt_wide.png" id="3_7cqdy"]
 [ext_resource type="Texture2D" uid="uid://e2hbryb8stpt" path="res://assets/objects/basic_grass_biom_things.png" id="4_pudl8"]
 [ext_resource type="PackedScene" uid="uid://cmlqybu16hcq5" path="res://scenes/houses/large_house.tscn" id="5_pudl8"]
+[ext_resource type="PackedScene" uid="uid://c1hb2ohdb4cgq" path="res://scenes/houses/medium_house.tscn" id="6_8u0cr"]
 [ext_resource type="PackedScene" uid="uid://bkin53c0n5rk1" path="res://scenes/objects/trees/small_tree.tscn" id="6_uk42g"]
 [ext_resource type="PackedScene" uid="uid://dt48jp7ur5wtk" path="res://scenes/objects/rocks/rock.tscn" id="7_yewih"]
 [ext_resource type="PackedScene" uid="uid://dv64wc0id86qo" path="res://scenes/objects/trees/large_tree.tscn" id="8_8yb5x"]
@@ -486,6 +487,7 @@ texture = ExtResource("4_pudl8")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_uk42g"]
 scenes/1/scene = ExtResource("5_pudl8")
+scenes/2/scene = ExtResource("6_8u0cr")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_yewih"]
 scenes/1/scene = ExtResource("6_uk42g")

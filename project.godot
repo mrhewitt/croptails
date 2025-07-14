@@ -15,6 +15,10 @@ run/main_scene="uid://bpk1r6ijqatin"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://cs01w86jkt6lv"
+
 [autoload]
 
 ToolManager="*res://scripts/globals/tool_manager.gd"
@@ -63,6 +67,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 folder_colors={
 "res://assets/": "orange",
+"res://audio/": "red",
 "res://dialogue/": "teal",
 "res://resources/": "purple",
 "res://scenes/": "green",

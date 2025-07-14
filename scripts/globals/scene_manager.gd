@@ -11,10 +11,10 @@ var levels_scenes: Dictionary = {
 
 
 func load_main_scene_container() -> void:
-	# remove existing game is one is running as user requested to start new
+	# remove existing game is one if running as user requested to start new
 	var main_scene = get_node(MAIN_SCENE_ROOT_PATH)
 	if main_scene != null:
-		# remove scene from tree to nsure its added with correct name (not generated one as happens
+		# remove scene from tree to ensure its added with correct name (not generated one as happens
 		# when two nodes of same name are added to a scene)
 		# queue_free only happens when frame is processes thus just queue_free
 		# would leave MainScene in tree still when rest of loading code processses   

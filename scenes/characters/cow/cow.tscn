@@ -1,8 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://drmmvukci2hmb"]
+[gd_scene load_steps=15 format=3 uid="uid://drmmvukci2hmb"]
 
 [ext_resource type="Script" uid="uid://bcm7mwi5s8nix" path="res://scenes/characters/cow/cow.gd" id="1_14ngq"]
 [ext_resource type="Texture2D" uid="uid://dcxsf4sfw4cgq" path="res://assets/characters/cow_sprites.png" id="1_ilrem"]
+[ext_resource type="PackedScene" uid="uid://b3fo55vugkqyt" path="res://audio/sfx/cow_moo_sfx.tscn" id="2_4jynl"]
 [ext_resource type="Script" uid="uid://kxuv1plrdfs0" path="res://scripts/state_machine/node_state_machine.gd" id="2_j7g5r"]
+[ext_resource type="PackedScene" uid="uid://ir2xoq1acfyl" path="res://scenes/components/audio_play_time_component.tscn" id="3_cgos1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gsrfl"]
 atlas = ExtResource("1_ilrem")
@@ -177,6 +179,15 @@ func _on_exit() -> void:
 position = Vector2(0, -13)
 collision_layer = 64
 script = ExtResource("1_14ngq")
+
+[node name="CowMooSFX" parent="." instance=ExtResource("2_4jynl")]
+
+[node name="AudioPlayTimeComponent" parent="." node_paths=PackedStringArray("audio_stream_player_2D") instance=ExtResource("3_cgos1")]
+wait_time = 20.0
+autostart = true
+audio_stream_player_2D = NodePath("../CowMooSFX")
+min_wait_time = 15
+max_wait_time = 75
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ehsty")
